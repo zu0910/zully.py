@@ -1,34 +1,55 @@
-# El programa selecciona aleatoriamente un número secreto entre 1 y 100., donde 
-#el usuario tiene un total de 10 intentos para adivinar el número secreto. Después 
-#de cada intento, el programa dará pistas indicando si el número secreto es mayor o menor
-#que la suposición actual del usuario. Si el usuario adivina correctamente, el programa felicitará 
-#al jugador y mostrará en cuántos intentos lo logró.
-#El programa debe ser amigable y explicar claramente las instrucciones al usuario.
+#1. Al inicio, el programa dará la bienvenida y explicará la naturaleza de la Secuencia de Fibonacci, donde solicitará al usuario ingresar un valor entero "n",
+# representando hasta qué término de la secuencia se generará. Aquí mostrará la secuencia de Fibonacci hasta el enésimo término ingresado por el usuario. Luego, 
+#preguntará si el usuario desea continuar o salir, donde si se decide salir, el programa se detendrá; de lo contrario, se repetirá el proceso.
 
-import random#Aleatorio
+#Secuencia de Fibonacci
+#mientras el booleano sea verdadero hara 
+bool = True
+while bool:
+#le dara la bienvenida al usuaruo y le explicara como se lleva a cabo la secuencia e fibonacci
+    print("----------BIENVENIDO A LA SECUENCIA DE FIBONACCI--------------")
+    print("""
+    EXPLICACION DE LA SECUENCIA DE FIBONACCI:
+        Fibonacci se trata de una secuencia infinita de números naturales; a partir del 0 y el 1, se van sumando a pares, 
+        de manera que cada número es igual a la suma de sus dos anteriores
+        0,1,1,2,3,5...
+        0+1=1
+        1+2=3
+        3+2=5....
+    """)
+    cant=int(input("Por favor ingrese cuantos numeros desees generar"))#El usuario ingresara un numero entero, depemde de ese numero se hara lo siguiente
+    #tres variables
+    a = 1
+    inicioFi = 0 #primer termino de la secuencia 
+    FinalFi = 1 #segundo termino de la secuencia
+    #se ejecutara las siguientes funciones
+    while a <= cant:
+        if a%2 == 1:
+            print(inicioFi)
 
-numero_Secreto = random.randint(1, 100)
-#Explicacion del juego
-print("""
--------------------ADIVINA ADIVINADOR--------------------------
-      OBJETIVO: adivinar un numero del 1 al 100
-              -Tendras solo 10 intentos 
-      Si te equivocas no te preocupes te dare pequeñas pistas;)
-                  
-""")
-#Para i en rango va contar hasta 10 (donde eso son los numeros de intentos)
-for i in range(1, 11):
-    #El usuario ingresara un numero 
-    num=int(input("Por favor ingrese un numero del 1 al 100"))
-    #Si lo adivina a la primera lo felicitara y mostrara los numeros de intentos
-    if num == numero_Secreto:
-        print("FELICITACIONES DIOS ESTUVO CONTIGO OTRA VEZ", i)
-    #Si no le va a mostrar las pequeñas pistas
-    else:
-        if num < numero_Secreto:
-            print("El numero es mayor, Vuelva a intentar!")
+            inicioFi = inicioFi + FinalFi
 
-        if num > numero_Secreto:
-            print("El numero es menor, Vuelvalo a intentar!!!")
-            
-#Elaborado por Ortiz Zully CC.1092528097
+        else: 
+            print(FinalFi)
+
+            FinalFi = FinalFi + inicioFi
+
+        a = a + 1
+        #Indicaciones de volver a repetir el programa o finalizarla 
+    num=int(input("""
+    1). Repetir el programa 
+    2). Salir del programa
+    """))
+    
+    if num==1:
+        print("-----SEA BIENVENIDO OTRA VEZ AL PROGRAMA-----")
+
+    elif num==2:
+     break
+    
+    
+
+
+
+
+    # Desarrollado por Zully Ortiz CC 1092528097

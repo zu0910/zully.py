@@ -1,27 +1,34 @@
-#Este programa simula un juego interactivo en el que el usuario debe adivinar un número 
-#secreto elegido aleatoriamente por el programa. El número secreto está en el rango de 1 a 100.
-#Después de cada intento del usuario, el programa proporciona pistas indicando si el número secreto
-#es mayor o menor que la suposición actual. El objetivo es adivinar el número secreto en la menor 
-#cantidad de intentos posible.
+# El programa selecciona aleatoriamente un número secreto entre 1 y 100., donde 
+#el usuario tiene un total de 10 intentos para adivinar el número secreto. Después 
+#de cada intento, el programa dará pistas indicando si el número secreto es mayor o menor
+#que la suposición actual del usuario. Si el usuario adivina correctamente, el programa felicitará 
+#al jugador y mostrará en cuántos intentos lo logró.
+#El programa debe ser amigable y explicar claramente las instrucciones al usuario.
 
-import random#aleatorio
-#variable que crara los numeros aleatorias del 1 al 100
+import random#Aleatorio
 
-aleatorio_num = random.randint (1, 100)
-#mientras sea verdadero se hara 
-while True:
-   #El usuario ingresara un numero entero del 1 al 100
-   
-   num = int(input("Por favor ingrese un numero del 1 al 100"))
+numero_Secreto = random.randint(1, 100)
+#Explicacion del juego
+print("""
+-------------------ADIVINA ADIVINADOR--------------------------
+      OBJETIVO: adivinar un numero del 1 al 100
+              -Tendras solo 10 intentos 
+      Si te equivocas no te preocupes te dare pequeñas pistas;)
+                  
+""")
+#Para i en rango va contar hasta 10 (donde eso son los numeros de intentos)
+for i in range(1, 11):
+    #El usuario ingresara un numero 
+    num=int(input("Por favor ingrese un numero del 1 al 100"))
+    #Si lo adivina a la primera lo felicitara y mostrara los numeros de intentos
+    if num == numero_Secreto:
+        print("FELICITACIONES DIOS ESTUVO CONTIGO OTRA VEZ", i)
+    #Si no le va a mostrar las pequeñas pistas
+    else:
+        if num < numero_Secreto:
+            print("El numero es mayor, Vuelva a intentar!")
 
-   if num == aleatorio_num:#si el numero que ingreso es igual al numero aleatorio
-      print("FELICIDADES!!! Tuviste mucha suerte")#Dios estaba con el 
-      break 
-   else:
-       #Si no adivino el programa le dara algunas pistas hasta que lo adivine 
-      if num < aleatorio_num:
-        print("El numero es mayor, vuelvalo a intentar")
-      if num > aleatorio_num:
-         print("El numero es menor, vuelvalo a intentar")
-         
-#Desarrolado por Ortiz Zully CC. 1092528097
+        if num > numero_Secreto:
+            print("El numero es menor, Vuelvalo a intentar!!!")
+            
+#Elaborado por Ortiz Zully CC.1092528097
