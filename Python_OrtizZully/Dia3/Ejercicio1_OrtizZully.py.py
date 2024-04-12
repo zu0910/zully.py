@@ -5,12 +5,14 @@ Booleanito2=True
 while Booleanito2==True: 
     #Mostrar menu principal
     print("""
-    ========================================
-        1).Numeros primos
-        2).informacion adicional de primos
-        3).Contraseñas aleatorias
-        4).informacion adicional de contraseñas
-        0).Salir
+    ===================================================
+          ---------------MENU PRINCIPAL---------------
+               1).Numeros primos
+               2).informacion adicional de primos
+               3).Contraseñas aleatorias
+               4).informacion adicional de contraseñas
+               0).Salir
+    ===================================================
     """)
     #Digitar un numero del menu principal
     opc=int(input("Ingrese un numero para ir a la opcion deseada: "))
