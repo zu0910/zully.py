@@ -74,7 +74,9 @@ while menu == True:
     if cantL <= cant[code]:
         cant[code]=cant[code] - cantL
         
-        print(cantL)
+    
+        
+        
  
     
         
@@ -86,7 +88,7 @@ while menu == True:
         print("Gracias por usar el programa:)")
         menu = False
         
-
+#HECHO POR ZULLY ORTIZ  CC: 1092528097 Y FREILER ORTEGA  CC: 1010075774
 
         
 
