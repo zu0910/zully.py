@@ -1,3 +1,6 @@
+# -----------------------------------------------------------
+# -----------------SHOPPING CART-----------------------------
+#------------------------------------------------------------
 #Lista donde se guardara los nombres de los productos 
 nameP= []
 #Lista donde se guardara los precios de los productos 
@@ -13,7 +16,7 @@ while booleanito == True:
     ------------------------------- SHOPPIGN CART --------------------------------
         HERE YOU CAN ENTER THE NAME, PRICE AND THE QUANTITY OF THE SHOOPING CART 
 
-        1). Add name of the shooping cart.
+        1). Add products at shooping cart.
         2). Show the shooping cart
         3). Close shopping cart
           
@@ -57,3 +60,5 @@ while booleanito == True:
         print("THANKS FOR COMING")#se le agradecera por venir 
         print("HAVE A GOOD DAY, SEE YOU :))) ")# y le deseara un buen dia 
         booleanito = False#mientras booleanito es igual a falso terminara el programa 
+
+#Elaborapo por Zully Fernanda Ortiz Avendaño Cc. 1092528097
