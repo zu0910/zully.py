@@ -1,10 +1,16 @@
 #crear tres frutas con su precio y cantidad
 fruits = [("strawberry", 2.34, 10), ("watermelon",0.25,25), ("pineapple", 0.51 , 4)]
-
+result = []
 #Convertir los nombres de las frutas en mayusculas se utiliza .upper
-
 capitalized_Name = [fruit.upper() for fruit, price, cant in fruits]
 print(capitalized_Name)
+#Como lo explico pedro en la lista
+for i in fruits:
+
+    result.append(i[0].upper())
+    if len(result)>2:
+
+        print(result)
 
 #mostrar la fruta que tenga el precio menor a 0.50 
 

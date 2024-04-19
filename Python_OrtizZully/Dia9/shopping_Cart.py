@@ -51,9 +51,9 @@ while booleanito == True:
     #si elige la opcion dos se hara 
     elif opc == 2: 
         #Para i en rago contara de cero hasta nameP(coloquye un nombre de la lista ya que como fin todos los productos se guardaron con una funcion y se mostrara los otros )
+        print("List of all products added of shopping cart : " )
         for i in range(0,len(nameP)):
-            print("List of all products added of shopping cart : " 
-                  " Name: ", nameP[i] , " Price: ", priceP[i], " Quantity: ", quantityP[i]) #imprimira todos los nombres, precios y cantidades de productos agregado por el usuario 
+             print("  Name:  ",  nameP[i] , "     Price:   ",  priceP[i] ,  "    Quantity:    ",  quantityP[i]) #imprimira todos los nombres, precios y cantidades de productos agregado por el usuario 
     #si la opcion elegida es tres se hara
     elif opc == 3:
         #finalizara el programa 
