@@ -1,6 +1,8 @@
 ## PYTHON 
 
-En este repositorio esta regritrados los dias de trabajo en la plataforma de python.
+En este repositorio esta regritrados los dias de trabajo en la plataforma de python donde se registra mi proceso de aprendizaje de este programa.
+
+
 
 ## Descripción
 
@@ -93,11 +95,30 @@ Consta de 12 carpetas cada una tiene una funcionalidad diferente:
 
     - Para poder elaborar este condigo hice uso de las funciones y de algunas funciones basicas para poder realizar la ejecución.
 
-9. **Dia10**
+9. **Dia10**: Contiene una carpeta llamada `position.py`
+    - Su funcion es agregar numeros a la lista dejandolo de una forma ordena 
 
+10. **Dia11**: Contiene una carpeta llamada `Fernanda.py`
+    - Tema de json donde contiene crear, Actualizar, Eliminar y revisar
 
+11. **Dia12**: Contiene una carperta llamada `clase.py`
+    - Contiene un json donde debemos que sacar la informacion impotamnte desde la carpeta de json.
 
 
 ## Estrutura
 
 ![alt text](image.png)
+
+## Lenguajes usados 
+
+- Python 
+
+## Indicaciones 
+
+- Instalar Visual Studio Code
+- Descargar Python 
+- En Visual instalar la extension python
+
+## Creditos
+
+Elaborado por Zully Fernanda Ortiz Avendaño Cc. 1092528097
